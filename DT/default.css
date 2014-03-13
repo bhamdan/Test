@@ -242,7 +242,7 @@
 	.button:before
 	{
 		display: inline-block;
-		background: #FFC31F;
+		background: #006f93;
 		margin-right: 1em;
 		width: 40px;
 		height: 40px;
@@ -380,7 +380,7 @@
 	#logo a
 	{
 		text-decoration: none;
-		text-transform: uppercase;
+		/*text-transform: uppercase;*/
 		color: #FFF;
 	}
 
@@ -490,8 +490,55 @@
 /* Content                                                                       */
 /*********************************************************************************/
 
+    #content-heading
+    {
+	    overflow: hidden;
+	    /*margin: 5em auto 2em auto;*/
+	    padding: 2em 0em 2em 0em;
+	    background: #ECECEC;
+        text-align:center;
+    }
+
+    #content-heading h2
+    {
+	    margin: 0em;
+	    padding: 0em;
+	    font-weight: 400;
+	    font-size: 2.4em;
+	    color: #555555;
+    }
+
+    #content-heading span
+    {
+	    display: block;
+	    padding-top: 0.20em;
+	    text-transform: uppercase;
+	    font-size: 1.2em;
+	    color: #A2A2A2;
+    }
+
 	#content
 	{
+		overflow: hidden;
+		padding: 5em 0em;
+	}
+	
+	#content .title
+	{
+		text-align: center;
+	}
+	
+	#content .button
+	{
+		margin-top: 5em;
+	}
+	
+	#content .icon
+	{
+		display: block;
+		/*margin-bottom: 0.5em;*/
+		text-align: center;
+		font-size: 3em;
 	}
 
 /*********************************************************************************/
@@ -562,6 +609,23 @@
 		float: right;
 		width: 344px;
 		padding-left: 40px;
+	}
+
+	#footer .fbox1,
+	#footer .fbox2,
+	#footer .fbox3
+	{
+		float: left;
+		width: 320px;
+		padding: 0px 0px 0px 15px;
+    	text-align: center;
+	}
+
+	#footer .fbox1 .icon
+	{
+		display: block;
+		margin-bottom: 1em;
+		font-size: 3em;
 	}
 
 /*********************************************************************************/
